@@ -1,0 +1,179 @@
+.navbar {
+    background: var(--white);
+    box-shadow: 0 2px 16px 0 rgba(138, 108, 247, 0.12);
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 0.7em 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-family: var(--font-title);
+}
+
+body.dark .navbar {
+    background: var(--white-dark);
+    box-shadow: var(--shadow-dark);
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2em;
+}
+
+.navbar-logo {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: var(--primary);
+    text-decoration: none;
+    letter-spacing: 0.07em;
+    background: none;
+}
+
+body.dark .navbar-logo {
+    color: var(--accent-dark);
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 1.5em;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-link {
+    font-size: 1.08em;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 0.5em 1.2em;
+    border-radius: var(--radius);
+    background: none;
+    font-weight: 700;
+    transition: background 0.6s, color 0.6s, box-shadow 0.6s, transform 0.4s;
+    position: relative;
+}
+
+body.dark .navbar-link {
+    color: var(--accent-dark);
+}
+
+.navbar-link.active,
+.navbar-link:hover,
+.navbar-link:focus {
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    color: var(--white);
+    box-shadow: 0 4px 18px var(--primary);
+    transform: scale(1.09);
+}
+
+body.dark .navbar-link.active,
+body.dark .navbar-link:hover,
+body.dark .navbar-link:focus {
+    background: linear-gradient(90deg, var(--primary-dark), var(--accent-dark));
+    color: var(--white-dark);
+    box-shadow: 0 4px 18px var(--primary-dark);
+}
+
+.theme-toggle {
+    margin-left: 1.2em;
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: var(--primary);
+    transition: color 0.4s;
+}
+
+body.dark .theme-toggle {
+    color: var(--accent-dark);
+}
+
+/* Hamburger menu button (hidden on desktop) */
+.navbar-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1.2em;
+}
+
+.navbar-toggle-icon {
+    width: 24px;
+    height: 3px;
+    background: var(--primary);
+    display: block;
+    position: relative;
+    border-radius: 2px;
+}
+
+.navbar-toggle-icon::before,
+.navbar-toggle-icon::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: var(--primary);
+    position: absolute;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.navbar-toggle-icon::before {
+    top: -8px;
+}
+
+.navbar-toggle-icon::after {
+    top: 8px;
+}
+
+body.dark .navbar-toggle-icon,
+body.dark .navbar-toggle-icon::before,
+body.dark .navbar-toggle-icon::after {
+    background: var(--accent-dark);
+}
+
+/* Responsive styles */
+@media (max-width: 900px) {
+    .navbar-container {
+        padding: 0 1em;
+    }
+
+    .navbar-menu {
+        gap: 0.8em;
+    }
+}
+
+@media (max-width: 700px) {
+    .navbar-container {
+        flex-wrap: wrap;
+    }
+
+    .navbar-menu {
+        flex-direction: column;
+        background: var(--white);
+        position: absolute;
+        top: 56px;
+        left: 0;
+        width: 100%;
+        border-radius: 0 0 var(--radius) var(--radius);
+        box-shadow: 0 6px 24px rgba(138, 108, 247, 0.09);
+        padding: 1.2em 0;
+        display: none;
+        z-index: 120;
+    }
+
+    .navbar-menu.open {
+        display: flex;
+    }
+
+    body.dark .navbar-menu {
+        background: var(--white-dark);
+        box-shadow: var(--shadow-dark);
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}

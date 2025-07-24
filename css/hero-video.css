@@ -1,0 +1,101 @@
+:root #hero {
+    /* Light theme */
+    --white: #fff;
+    --bg: #f4f7fa;
+    --primary: #8a6cf7;
+    --accent: #ffd966;
+    --secondary: #61dafb;
+    --text: #222;
+    --soft: #f9eafd;
+    --success: #6ef7a7;
+    --danger: #f76e6e;
+    --radius: 20px;
+    --shadow: 0 4px 24px 0 rgba(138, 108, 247, 0.10);
+    --font-title: 'Montserrat', 'Quicksand', Arial, sans-serif;
+    --font-body: 'Quicksand', Arial, sans-serif;
+    /* Dark theme */
+    --white-dark: #181926;
+    --bg-dark: #1a1d2b;
+    --primary-dark: #5a4fbf;
+    --accent-dark: #e5b300;
+    --secondary-dark: #20b7c6;
+    --text-dark: #f4f7fa;
+    --soft-dark: #e52e00;
+    --shadow-dark: 0 4px 24px 0 rgba(90, 79, 191, 0.14);
+}
+
+
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 340px;
+    /* smaller overall hero height */
+    padding: 0;
+    background: transparent;
+    overflow: visible;
+}
+
+/* Make the video smaller, centered horizontally & vertically */
+.hero-bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 540px;
+    /* set desired width */
+    height: 320px;
+    /* set desired height */
+    max-width: 90vw;
+    max-height: 60vh;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    border-radius: 24px;
+    z-index: 1;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+    pointer-events: none;
+}
+
+/* Center the hero content directly over the video */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 2.3em;
+    font-weight: 900;
+    color: var(--primary);
+    text-shadow: 0 2px 14px rgba(0, 0, 0, 0.14);
+    margin-bottom: 0.2em;
+}
+
+.hero-desc {
+    font-size: 1.1em;
+    color: var(--accent);
+    text-shadow: 0 1px 7px rgba(0, 0, 0, 0.11);
+    min-height: 2em;
+}
+
+/* Responsive for mobile/tablet */
+@media (max-width: 700px) {
+    .hero-bg-video {
+        width: 95vw;
+        height: 180px;
+        border-radius: 16px;
+    }
+
+    .hero-title {
+        font-size: 1.2em;
+    }
+
+    .hero-desc {
+        font-size: 0.9em;
+    }
+}
