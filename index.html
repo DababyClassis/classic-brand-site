@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>CLASSIC BRAND - Home</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@500;700&display=swap"
-    rel="stylesheet">
-  <!-- Add to <head> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="css/fontawesome/all.min.css">
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="css/modern-navbar.css">
-  <script src="js/main.js" defer></script>
-  <script src="js/scroll-animate.js" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Classic Brand | Premium Branding & Customization</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<audio id="bg-music" src="assets/background-music.mp3" autoplay loop></audio>
+<body class="bg-white text-gray-800">
 
-<body>
-  <div class="loader"></div>
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">CLASSIC BRAND</a>
-      <button class="navbar-toggle" aria-label="Toggle menu">
-        <span class="navbar-toggle-icon"></span>
-      </button>
-      <ul class="navbar-menu">
-        <li><a href="index.html" class="navbar-link">Home</a></li>
-        <li><a href="services.html" class="navbar-link">Services</a></li>
-        <li><a href="gallery.html" class="navbar-link">Gallery</a></li>
-        <li><a href="about.html" class="navbar-link">About</a></li>
-        <li><a href="contact.html" class="navbar-link">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
-    </div>
-  </nav>
-  <header class="hero">
-    <button id="toggle-music" aria-label="Toggle music">🔊</button>
-    <div class="hero-content">
-      <h1 class="hero-title">CLASSIC BRAND</h1>
-      <p class="hero-desc"></p>
-      <a href="contact.html" class="cta-button">Order Now</a>
-    </div>
-  </header>
-  <div class="sweet-divider">
-    <svg viewBox="0 0 1440 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,20 C400,56 1040,0 1440,20 L1440,56 L0,56 Z" fill="#f9eafd"></path>
-    </svg>
-  </div>
-  <section class="section">
-    <h2 class="section-title">Why Choose Us?</h2>
-    <div style="display:flex; flex-wrap:wrap; gap:2em; justify-content:center;">
-      <div class="service-card"><span class="service-icon"><i class="fas fa-tshirt"></i></span>
-        <h3>Unique Designs</h3>
-        <p>Express your identity with custom-fitted fashion.</p>
-      </div>
-      <div class="service-card"><span class="service-icon"><i class="fa-solid fa-hand-holding-dollar"></i></span>
-        <h3>Premium Quality</h3>
-        <p>Wear it for years, looks new always.</p>
-      </div>
-      <div class="service-card"><span class="service-icon"><i class="fa-solid fa-truck-fast"></i></span>
-        <h3>Fast Delivery</h3>
-        <p>From sketch to doorstep in record time.</p>
-      </div>
-      <div class="service-card"><span class="service-icon"><i class="fas fa-leaf"></i></span>
-        <h3>Eco-Friendly</h3>
-        <p>Sustainable materials and ethical production.</p>
-      </div>
-    </div>
-    <div class="testimonials">
-      <div class="testimonial-card">
-        “Unmatched creativity, my team loves their new look!”<br>
-        <span class="testimonial-author">— Alex, Football Coach</span>
-      </div>
-      <div class="testimonial-card">
-        “Super comfortable and stylish. Will always order here.”<br>
-        <span class="testimonial-author">— Tina, Entrepreneur</span>
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center h-[90vh]" style="background-image: url('your-hero-image.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white text-center px-4">
+      <h1 class="text-4xl md:text-6xl font-bold">Stitched to Perfection</h1>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl">Custom embroidery & printing solutions in Uganda – tailored for schools, businesses, and brands.</p>
+      <div class="mt-6 flex space-x-4">
+        <a href="https://wa.me/256785475049" class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold">
+          <i class="fab fa-whatsapp mr-2"></i>Order Now
+        </a>
+        <a href="tel:+256759921866" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full font-semibold">
+          <i class="fas fa-phone-alt mr-2"></i>Call Us
+        </a>
       </div>
     </div>
   </section>
-  <footer>
-    <div class="social-links">
-      <a href="https://www.instagram.com/classicembroiderybrand/#" aria-label="Instagram"><i
-          class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/profile.php?id=61578712504010" aria-label="Facebook"><i
-          class="fab fa-facebook-f"></i></a>
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    </div>
-    <p>&copy; 2025 CLASSIC BRAND. All rights reserved. <span class="footer-heart"><i class="fas fa-heart"></i></span>
-    </p>
-    <p>CEO: DanielMac</p>
-  </footer>
-  <button id="back-to-top" aria-label="Back to top" title="Go to top">
-    <i class="fas fa-arrow-up"></i> <!-- FontAwesome icon -->
-  </button>
-</body>
-<script src="js/hero-desc-loader.js" defer></script>
-<script src="js/navbar-menu.js" defer></script>
 
+  <!-- Services Section -->
+  <section class="py-16 bg-gray-100 text-center">
+    <h2 class="text-3xl font-bold mb-8">Our Expert Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-6">
+      <div>
+        <i class="fas fa-tshirt text-4xl text-gold-500 mb-4"></i>
+        <h3 class="text-xl font-semibold">T-Shirt & Hoodie Printing</h3>
+        <p class="mt-2 text-sm">DTG, screen, sublimation – clean finishes, vibrant colors.</p>
+      </div>
+      <div>
+        <i class="fas fa-needle text-4xl text-gold-500 mb-4"></i>
+        <h3 class="text-xl font-semibold">Embroidery</h3>
+        <p class="mt-2 text-sm">Logo embroidery for schools, companies, and custom branding.</p>
+      </div>
+      <div>
+        <i class="fas fa-tags text-4xl text-gold-500 mb-4"></i>
+        <h3 class="text-xl font-semibold">Garment Labeling</h3>
+        <p class="mt-2 text-sm">Tags, patches, name prints for your unique style.</p>
+      </div>
+    </div>
+    <div class="mt-10">
+      <a href="https://wa.me/256785475049" class="text-blue-600 hover:underline font-medium">Get a Free Quote →</a>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="py-16">
+    <h2 class="text-3xl font-bold text-center mb-8">Our Work Speaks for Itself</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+      <!-- Replace with actual image URLs -->
+      <img src="project1.jpg" alt="Project 1" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+      <img src="project2.jpg" alt="Project 2" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+      <img src="project3.jpg" alt="Project 3" class="rounded-lg shadow-md hover:scale-105 transition-transform" />
+    </div>
+    <div class="text-center mt-8">
+      <a href="https://instagram.com/classicbrand.ug" target="_blank" class="text-pink-500 hover:underline font-medium">See More on Instagram →</a>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="bg-gray-100 py-16 text-center">
+    <h2 class="text-3xl font-bold mb-8">Why Choose Classic Brand?</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 px-4">
+      <div><i class="fas fa-award text-3xl mb-2 text-yellow-500"></i><p>Trusted Experts</p></div>
+      <div><i class="fas fa-clock text-3xl mb-2 text-yellow-500"></i><p>Quick Turnaround</p></div>
+      <div><i class="fas fa-trophy text-3xl mb-2 text-yellow-500"></i><p>Top Quality</p></div>
+      <div><i class="fas fa-school text-3xl mb-2 text-yellow-500"></i><p>Schools & Brands</p></div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 bg-black text-white text-center">
+    <h2 class="text-3xl font-bold mb-4">Let’s Bring Your Brand to Life</h2>
+    <p class="mb-6">📍 Matugga, Bombo Road, Opposite Kobil, near Lwadda School, Kampala, Uganda</p>
+    <div class="flex justify-center space-x-6">
+      <a href="https://wa.me/256785475049" class="text-green-400 hover:text-green-600"><i class="fab fa-whatsapp text-3xl"></i></a>
+      <a href="tel:+256759921866" class="text-blue-400 hover:text-blue-600"><i class="fas fa-phone text-3xl"></i></a>
+      <a href="https://instagram.com/classicbrand.ug" class="text-pink-400 hover:text-pink-600"><i class="fab fa-instagram text-3xl"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-300 text-center py-6 text-sm">
+    <p>&copy; 2025 Classic Brand | Premium Embroidery & Printing in Uganda</p>
+    <p>Embroidery Matugga | T-shirt Printing Kampala | Business Branding</p>
+  </footer>
+
+</body>
 </html>
