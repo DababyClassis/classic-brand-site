@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design - Day 7</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>21-Day Web Development Challenge</h1>
+            <p>Week 1: Responsive Design</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="week-nav">
+            <a href="index.html" class="week-btn active">Week 1</a>
+            <a href="../week2/week2.html" class="week-btn">Week 2</a>
+            <a href="../week3/week3.html" class="week-btn">Week 3</a>
+        </div>
+
+        <div class="content-page">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Week 1 Projects</a>
+
+            <h2>Responsive Design Demonstration</h2>
+            <p class="day-badge">Day 7 Project</p>
+            <p>This page demonstrates responsive design techniques that make websites work well on all device sizes.</p>
+
+            <div class="responsive-demo">
+                <div class="device-mockup">
+                    <div class="device device-phone">
+                        <div class="device-content">
+                            <h4>Phone View</h4>
+                            <p>Single column layout, larger touch targets, simplified navigation</p>
+                        </div>
+                    </div>
+
+                    <div class="device device-tablet">
+                        <div class="device-content">
+                            <h4>Tablet View</h4>
+                            <p>Adapted multi-column layout, balanced typography</p>
+                        </div>
+                    </div>
+
+                    <div class="device device-desktop">
+                        <div class="device-content">
+                            <h4>Desktop View</h4>
+                            <p>Multi-column layout, detailed navigation, hover effects</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-features">
+                    <h3>Key Responsive Design Techniques</h3>
+
+                    <div class="feature">
+                        <h4>Fluid Layouts</h4>
+                        <p>Using percentage-based widths instead of fixed pixels</p>
+                        <pre>
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}</pre>
+                    </div>
+
+                    <div class="feature">
+                        <h4>Flexible Images</h4>
+                        <p>Ensuring images scale appropriately</p>
+                        <pre>
+img {
+    max-width: 100%;
+    height: auto;
+}</pre>
+                    </div>
+
+                    <div class="feature">
+                        <h4>Media Queries</h4>
+                        <p>Applying different styles based on device characteristics</p>
+                        <pre>
+/* Mobile first */
+.container { padding: 10px; }
+
+/* Tablet */
+@media (min-width: 768px) {
+    .container { padding: 20px; }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container { padding: 30px; }
+}</pre>
+                    </div>
+
+                    <div class="feature">
+                        <h4>Mobile-First Approach</h4>
+                        <p>Designing for mobile first, then enhancing for larger screens</p>
+                        <pre>
+/* Base styles (mobile) */
+.nav { display: block; }
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .nav { display: flex; }
+}</pre>
+                    </div>
+                </div>
+
+                <div class="responsive-test">
+                    <h3>Test the Responsiveness</h3>
+                    <p>Try resizing your browser window to see how this page adapts to different screen sizes.</p>
+
+                    <div class="layout-example">
+                        <div class="header">Header</div>
+                        <div class="sidebar">Sidebar</div>
+                        <div class="main">Main Content</div>
+                        <div class="footer">Footer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>21-Day Web Development Challenge - Created by [Your Name]</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling - Day 6</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>21-Day Web Development Challenge</h1>
+            <p>Week 1: CSS Styling</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="week-nav">
+            <a href="index.html" class="week-btn active">Week 1</a>
+            <a href="../week2/week2.html" class="week-btn">Week 2</a>
+            <a href="../week3/week3.html" class="week-btn">Week 3</a>
+        </div>
+
+        <div class="content-page">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Week 1 Projects</a>
+
+            <h2>CSS Styling Examples</h2>
+            <p class="day-badge">Day 6 Project</p>
+            <p>This page demonstrates various CSS styling techniques to enhance the visual appeal of web pages.</p>
+
+            <div class="styling-examples">
+                <div class="example-card">
+                    <h3>Color and Typography</h3>
+                    <p class="text-primary">This is primary colored text</p>
+                    <p class="text-secondary">This is secondary colored text</p>
+                    <p class="text-accent">This is accent colored text</p>
+
+                    <h4 class="font-serif">This is a serif font</h4>
+                    <h4 class="font-sans">This is a sans-serif font</h4>
+                    <h4 class="font-monospace">This is a monospace font</h4>
+                </div>
+
+                <div class="example-card">
+                    <h3>Backgrounds and Gradients</h3>
+                    <div class="bg-solid">Solid background</div>
+                    <div class="bg-gradient">Gradient background</div>
+                    <div class="bg-image">Image background</div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Borders and Shadows</h3>
+                    <div class="border-example">Simple border</div>
+                    <div class="border-radius-example">Rounded corners</div>
+                    <div class="shadow-example">Box shadow</div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Transitions and Transformations</h3>
+                    <div class="transition-example">Hover for transition</div>
+                    <div class="transform-example">Hover for transformation</div>
+                    <div class="animation-example">Animated element</div>
+                </div>
+
+                <div class="example-card">
+                    <h3>Flexbox Layout</h3>
+                    <div class="flex-container">
+                        <div class="flex-item">Item 1</div>
+                        <div class="flex-item">Item 2</div>
+                        <div class="flex-item">Item 3</div>
+                    </div>
+                </div>
+
+                <div class="example-card">
+                    <h3>CSS Grid Layout</h3>
+                    <div class="grid-container">
+                        <div class="grid-item">Header</div>
+                        <div class="grid-item">Sidebar</div>
+                        <div class="grid-item">Main Content</div>
+                        <div class="grid-item">Footer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="css-code">
+                <h3>CSS Code Example</h3>
+                <pre>
+/* Button with hover effect */
+.btn {
+    background: #6a11cb;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #2575fc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Card with shadow */
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>21-Day Web Development Challenge - Created by [Your Name]</p>
+    </footer>
+</body>
+
+</html>
