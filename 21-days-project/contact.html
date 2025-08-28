@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - Day 5</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>21-Day Web Development Challenge</h1>
+            <p>Week 1: Contact Form</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="week-nav">
+            <a href="index.html" class="week-btn active">Week 1</a>
+            <a href="../week2/week2.html" class="week-btn">Week 2</a>
+            <a href="../week3/week3.html" class="week-btn">Week 3</a>
+        </div>
+
+        <div class="content-page">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Week 1 Projects</a>
+
+            <h2>Contact Me</h2>
+            <p class="day-badge">Day 5 Project</p>
+            <p>Have a question or want to work together? Send me a message using the form below.</p>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always interested in new opportunities and collaborations. Feel free to reach out if you'd
+                        like to discuss a project or just say hello!</p>
+
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> your.email@example.com</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Your City, Country</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="What is this regarding?">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>21-Day Web Development Challenge - Created by [Your Name]</p>
+    </footer>
+</body>
+
+</html>
